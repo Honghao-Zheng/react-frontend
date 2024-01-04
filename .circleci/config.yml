@@ -35,9 +35,9 @@ jobs:
           public-registry-alias: a5z6u3o2
           public-registry: true
 workflows:
-  demo-app-pipeline: 
+  app-pipeline: 
     jobs:
-      - install-and-test
+      - build-and-run
       - build-image-and-push:
           requires: 
-            - install-and-test 
+            - build-and-run
