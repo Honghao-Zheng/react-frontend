@@ -21,8 +21,8 @@ jobs:
           name: Build React app   
           working_directory: ~/react-frontend
       - run:
-          command: npm start
-          name: Run React app 
+          command: npm run dev
+          name: Run React app in development enviroment
           working_directory: ~/react-frontend
 
   build-image-and-push:
