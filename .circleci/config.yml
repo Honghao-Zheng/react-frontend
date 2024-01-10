@@ -27,7 +27,6 @@ jobs:
     steps:
       - setup_remote_docker
       - aws-ecr/build-and-push-image:
-          create-repo: true
           repo: react
           path: "./" 
           build-path: "./" 
@@ -37,6 +36,5 @@ workflows:
     jobs:
       - build-and-run
       - build-image-and-push:
-          context: aws-dev
           requires: 
             - build-and-run
