@@ -31,8 +31,6 @@ jobs:
           path: "./" 
           build-path: "./" 
           tag: ${CIRCLE_BUILD_NUM}
-          public-registry-alias: a5z6u3o2
-          public-registry: true
 workflows:
   app-pipeline: 
     jobs:
